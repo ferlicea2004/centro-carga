@@ -2,43 +2,52 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
 header {
-    background-color: #001f3f;
+    background-color: #00274D; /* Azul Marino */
     color: white;
-    padding: 20px;
+    padding: 15px 0;
 }
 
-header img {
-    max-width: 150px;
+.logo {
+    width: 100px;
     display: block;
     margin: 0 auto;
 }
 
 h1 {
-    margin: 10px 0;
+    margin: 0;
+    font-size: 24px;
 }
 
-main {
+.container {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-section {
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f4f4f4;
+h2 {
+    color: #00274D;
 }
 
-footer {
-    background-color: #001f3f;
-    color: white;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e0e0e0;
+    margin: 5px 0;
     padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border-radius: 5px;
+}
+
+.integrantes li {
+    font-weight: bold;
 }
