@@ -25,6 +25,7 @@ h1 {
 
 .container {
     max-width: 800px;
+    width: 90%;  /* Se adapta mejor en celulares */
     margin: 20px auto;
     padding: 20px;
     background: white;
@@ -40,6 +41,18 @@ h2 {
 p {
     text-align: justify;
     margin: 10px 0;
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;  /* Aumenta el ancho en móviles */
+        padding: 15px;
+    }
+
+    p {
+        text-align: left; /* Justificado puede verse mal en pantallas muy angostas */
+    }
 }
 
 ul {
