@@ -51,7 +51,7 @@ p {
     }
 
     p {
-        text-align: left; /* Justificado puede verse mal en pantallas muy angostas */
+        text-align: center; /* Justificado puede verse mal en pantallas muy angostas */
     }
 }
 
