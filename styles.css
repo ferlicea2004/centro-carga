@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     text-align: center;
-    justify-content: center;
 }
 
 header {
@@ -31,10 +30,15 @@ h1 {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    text-align: left;
 }
 
 h2 {
     color: #00274D;
+}
+
+p {
+    text-align: justify;
 }
 
 ul {
@@ -65,5 +69,4 @@ ul li {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
 
