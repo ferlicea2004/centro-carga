@@ -30,15 +30,16 @@ h1 {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    text-align: left;
 }
 
 h2 {
     color: #00274D;
+    text-align: center;
 }
 
 p {
     text-align: justify;
+    margin: 10px 0;
 }
 
 ul {
