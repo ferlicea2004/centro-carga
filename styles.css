@@ -71,6 +71,7 @@ p {
     border-radius: 5px;
     border: 2px solid #ccc; /* Marco delgado */
     padding: 2px;
+    align-content: center;
 }
 
 .data-list, .team-list {
