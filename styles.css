@@ -49,21 +49,28 @@ h2 {
     margin-bottom: 10px;
 }
 
+p {
+    margin-bottom: 20px; /* Aumenta el espacio entre el párrafo y las imágenes */
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 .gallery-item {
-    width: 30%;
+    width: 28%; /* Ajusta el tamaño de las imágenes */
     text-align: center;
 }
 
 .gallery-item img {
     width: 100%;
     border-radius: 5px;
+    border: 2px solid #ccc; /* Marco delgado */
+    padding: 2px;
 }
 
 .data-list, .team-list {
@@ -90,6 +97,7 @@ h2 {
     }
 
     .gallery-item {
-        width: 100%;
+        width: 80%;
     }
 }
+
