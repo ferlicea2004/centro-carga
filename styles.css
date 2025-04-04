@@ -1,86 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0D1B2A;
+    color: #000;
     text-align: center;
 }
 
 header {
-    background-color: #00274D; /* Azul Marino */
-    color: white;
-    padding: 15px 0;
+    background-color: #0D1B2A;
+    padding: 20px;
+    text-align: center;
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
     display: block;
     margin: 0 auto;
 }
 
 h1 {
-    margin: 0;
-    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.5em;
 }
 
 .container {
-    max-width: 800px;
-    width: 90%;  /* Se adapta mejor en celulares */
+    max-width: 900px;
     margin: 20px auto;
-    padding: 20px;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
 h2 {
-    color: #00274D;
     text-align: center;
-}
-
-p {
-    text-align: justify;
-    margin: 10px 0;
-}
-
-/* Ajustes específicos para pantallas pequeñas */
-@media (max-width: 600px) {
-    .container {
-        width: 95%;  /* Aumenta el ancho en móviles */
-        padding: 15px;
-    }
-
-    p {
-        text-align: center; /* Justificado puede verse mal en pantallas muy angostas */
-    }
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #e0e0e0;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.integrantes li {
-    font-weight: bold;
+    color: #0D1B2A;
+    margin-bottom: 10px;
 }
 
 .gallery {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px;
 }
 
-.gallery img {
+.gallery-item {
     width: 30%;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
+.gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.data-list, .team-list {
+    list-style: none;
+    padding: 0;
+}
+
+.data-list li, .team-list li {
+    background: #e0e0e0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+}
