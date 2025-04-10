@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro de Carga Universitario</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Carga Universitario</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Logo de la Universidad" class="logo">
-        <h1>DIVISIÓN DE INGENIERÍAS, ARQUITECTURA Y ACTUARÍA</h1>
-        <h1>Centro de Carga Universitario</h1>
-    </header>
+  <header>
+    <img src="logo.png" alt="Logo de la Universidad" class="logo">
+    <h1>DIVISIÓN DE INGENIERÍAS, ARQUITECTURA Y ACTUARÍA</h1>
+    <h1>Centro de Carga Universitario</h1>
+  </header>
 
-    <section class="container">
-        <div class="section">
-            <h2>Sobre el Proyecto</h2>
-            <p>
-                Este centro de carga fue desarrollado como un proyecto de reciclaje, aprovechando un locker en desuso para 
-                transformarlo en un espacio funcional para la carga de dispositivos electrónicos. Se reutilizaron materiales 
-                y componentes eléctricos, promoviendo la sostenibilidad dentro de la universidad.
-            </p>
-        </div>
+  <section class="container">
+    <!-- Navegación de pestañas -->
+    <div class="tabs">
+      <button class="tab-btn active" onclick="openTab(event, 'inicio')">Inicio</button>
+      <button class="tab-btn" onclick="openTab(event, 'proyecto')">Sobre el Proyecto</button>
+      <button class="tab-btn" onclick="openTab(event, 'desarrollo')">Desarrollo</button>
+      <button class="tab-btn" onclick="openTab(event, 'equipo')">Equipo de Trabajo</button>
+      <button class="tab-btn" onclick="openTab(event, 'responsabilidad')">Cláusula</button>
+    </div>
 
-        <div class="section">
-            <h2>Desarrollo</h2>
-            <p>
-                A lo largo del proceso, se llevaron a cabo distintas etapas como el desmontaje del locker, la instalación del 
-                sistema eléctrico y el reacondicionamiento del espacio. A continuación, se presentan algunas imágenes del desarrollo:
-            </p>
-            <div class="gallery">
-                <div class="gallery-item"> <img src="img1.png" alt="Proceso 1"> </div>
-                <div class="gallery-item"> <img src="img2.png" alt="Proceso 2"> </div>
-                <div class="gallery-item"> <img src="img3.png" alt="Proceso 3"> </div>
-                <div class="gallery-item"> <img src="img4.png" alt="Proceso 4"> </div>
-                <div class="gallery-item"> <img src="img5.png" alt="Proceso 5"> </div>
-                <div class="gallery-item"> <img src="img6.png" alt="Proceso 6"> </div>
-            </div>
-        </div>
+    <!-- Contenido de pestañas -->
+    <div id="inicio" class="tab-content active">
+      <div class="gallery-item"><img src="img6.png" alt="Imagen Principal"></div>
+      <h2>Datos Técnicos</h2>
+      <ul class="data-list">
+        <li><strong>Contacto AC:</strong> 15A 100-265V</li>
+        <li><strong>Contacto USB/C:</strong> 5V</li>
+        <li><strong>Regulador:</strong> Capacidad 1410VA o 700W</li>
+        <li><strong>Salida:</strong> 120V</li>
+        <li><strong>Entrada:</strong> 100-145V</li>
+        <li><strong>Potencia:</strong> 1000 - 1450V-A</li>
+        <li><strong>Regula:</strong> 100 - 145V</li>
+        <li><strong>Supresión de picos:</strong> 19 Joules</li>
+        <li><strong>Consumo Energético:</strong> 0.005kWh</li>
+      </ul>
+    </div>
 
-        <div class="section">
-            <h2>Datos Técnicos</h2>
-            <ul class="data-list">
-                <li><strong>Contacto AC:</strong> 15A 100-265V</li>
-                <li><strong>Contacto USB/C:</strong> 5V</li>
-                <li><strong>Regulador:</strong> Capacidad 1410VA o 700W</li>
-                <li><strong>Salida:</strong> 120V</li>
-                <li><strong>Entrada:</strong> 100-145V</li>
-                <li><strong>Potencia:</strong> 1000 - 1450V-A</li>
-                <li><strong>Regula:</strong> 100 - 145V</li>
-                <li><strong>Supresión de picos:</strong> 19 Joules</li>
-                <li><strong>Consumo Energético:</strong> 0.005kWh</li>
-            </ul>
-        </div>
+    <div id="proyecto" class="tab-content">
+      <h2>Sobre el Proyecto</h2>
+      <p>
+        Este centro de carga fue desarrollado como un proyecto de reciclaje, aprovechando un locker en desuso...
+      </p>
+    </div>
 
-        <div class="section">
-            <h2>Equipo de Trabajo</h2>
-            <ul class="team-list">
-                <li><strong>Titular del proyecto</strong> Dr. Sergio Román Jara</li>
-                <li><strong>Encargado del proyecto</strong> Ing. Richard Rivera González</li>
-                <li>Arq. Blanca Elena Fernández Martínez</li>
-                <li>Arq. Pedro Levit Arroyo Ventura</li>
-                <li>Practicante María Fernanda Hernández Licea</li>
-                <li>Practicante Axel Tristan Perez Quirasco</li>
-                <li>Practicante Aurora Yanett Martinez Pacheco</li>
-                <li>Practicante Miranda Catalina Aguilar Hernández</li>
-            </ul>
-        </div>
-        <div style="background-color: #f8d7da; color: #721c24; padding: 15px; border: 1px solid #f5c6cb; border-radius: 5px; margin-top: 20px;">
-  <strong>Cláusula de Responsabilidad:</strong> El uso de esta estación de carga es responsabilidad del usuario. No nos hacemos responsables por daños, pérdidas o fallas en los dispositivos conectados, ya sea por variaciones eléctricas, mal uso o cualquier otra situación ajena a nuestro control.
-</div>
-    </section>
+    <div id="desarrollo" class="tab-content">
+      <h2>Desarrollo</h2>
+      <p>
+        A lo largo del proceso, se llevaron a cabo distintas etapas como el desmontaje del locker...
+      </p>
+      <div class="gallery">
+        <div class="gallery-item"><img src="img1.png" alt="Proceso 1"></div>
+        <div class="gallery-item"><img src="img2.png" alt="Proceso 2"></div>
+        <div class="gallery-item"><img src="img3.png" alt="Proceso 3"></div>
+        <div class="gallery-item"><img src="img4.png" alt="Proceso 4"></div>
+        <div class="gallery-item"><img src="img5.png" alt="Proceso 5"></div>
+        <div class="gallery-item"><img src="img6.png" alt="Proceso 6"></div>
+      </div>
+    </div>
+
+    <div id="equipo" class="tab-content">
+      <h2>Equipo de Trabajo</h2>
+      <ul class="team-list">
+        <li><strong>Titular del proyecto</strong> Dr. Sergio Román Jara</li>
+        <li><strong>Encargado del proyecto</strong> Ing. Richard Rivera González</li>
+        <li>Arq. Blanca Elena Fernández Martínez</li>
+        <li>Arq. Pedro Levit Arroyo Ventura</li>
+        <li>Practicante María Fernanda Hernández Licea</li>
+        <li>Practicante Axel Tristan Perez Quirasco</li>
+        <li>Practicante Aurora Yanett Martinez Pacheco</li>
+        <li>Practicante Miranda Catalina Aguilar Hernández</li>
+      </ul>
+    </div>
+
+    <div id="responsabilidad" class="tab-content">
+      <div class="alert-box">
+        <strong>Cláusula de Responsabilidad:</strong> El uso de esta estación de carga es responsabilidad del usuario...
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function openTab(evt, tabId) {
+      const contents = document.querySelectorAll(".tab-content");
+      const tabs = document.querySelectorAll(".tab-btn");
+
+      contents.forEach(c => c.classList.remove("active"));
+      tabs.forEach(t => t.classList.remove("active"));
+
+      document.getElementById(tabId).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
 </body>
 </html>
