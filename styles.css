@@ -1,133 +1,97 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0D1B2A;
-    color: #000;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
 }
 
 header {
-    background-color: #0D1B2A;
-    padding: 20px;
-    text-align: center;
-}
-
-.logo {
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-}
-
-h1 {
-    color: white;
-    margin-top: 10px;
-    font-size: 1.5em;
-}
-
-.container {
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.section {
-    margin-bottom: 30px;
-    text-align: justify;
-}
-
-h2 {
-    text-align: center;
-    color: #0D1B2A;
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 20px; /* Aumenta el espacio entre el párrafo y las imágenes */
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.gallery-item {
-    width: 28%; /* Ajusta el tamaño de las imágenes */
-    text-align: center;
-}
-
-.gallery-item img {
-    width: 100%;
-    border-radius: 5px;
-    border: 2px solid #ccc; /* Marco delgado */
-    padding: 2px;
-}
-
-.data-list, .team-list {
-    list-style: none;
-    padding: 0;
-}
-
-.data-list li, .team-list li {
-    background: #e0e0e0;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .gallery {
-        flex-direction: column;
-    }
-
-    .gallery-item {
-        width: 80%;
-    }
-}
-
-.tabs {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.tab-btn {
-  padding: 10px 15px;
-  background-color: #ddd;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.tab-btn.active {
-  background-color: #444;
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
   color: white;
 }
 
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 70px 20px 20px;
+}
+
+/* Barra fija de pestañas */
+.tabs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tab-btn:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.tab-btn.active {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Ocultar contenido por defecto */
 .tab-content {
   display: none;
 }
 
 .tab-content.active {
   display: block;
+}
+
+/* Estilos comunes */
+.section {
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.data-list, .team-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.data-list li, .team-list li {
+  background: #e0e0e0;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .alert-box {
@@ -137,4 +101,3 @@ p {
   border: 1px solid #f5c6cb;
   border-radius: 5px;
 }
-
