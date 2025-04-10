@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000000, #0a1a2f); /* Negro a azul marino */
+    background-color: linear-gradient(to bottom, #000000, #0a1a2f); /* Negro a azul marino */
     color: #000;
     text-align: center;
 }
