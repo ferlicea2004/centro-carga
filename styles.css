@@ -18,21 +18,16 @@ header {
 }
 
 .container {
-  padding: 70px 20px 20px;
+  padding: 20px;
 }
 
-/* Barra fija de pestañas */
+/* Menú de pestañas (normal, no fijo) */
 .tabs {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #222;
   display: flex;
   justify-content: center;
   gap: 15px;
+  background-color: #222;
   padding: 10px 0;
-  z-index: 1000;
 }
 
 .tab-btn {
@@ -55,18 +50,13 @@ header {
   border-radius: 5px;
 }
 
-/* Ocultar contenido por defecto */
+/* Contenido */
 .tab-content {
   display: none;
 }
 
 .tab-content.active {
   display: block;
-}
-
-/* Estilos comunes */
-.section {
-  margin-bottom: 30px;
 }
 
 .gallery {
